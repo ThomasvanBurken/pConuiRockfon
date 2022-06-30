@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>wcf-dev-example</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta charset="utf-8" />
+
+    <!-- polyfills so code works also in IE -->
+    <script defer src="polyfills/dom4.js" type="text/javascript"></script>
+
+    <!-- w-cf libs -->
+    <script defer src="w-cf/libs/core-js/minified.js" type="text/javascript"></script>
+    <script defer src="w-cf/libs/pep/pep.min.js" type="text/javascript"></script>
+    <script defer src="w-cf/libs/jssha/sha.js" type="text/javascript"></script>
+
+    <!-- w-cf module styles -->
+    <link rel="stylesheet" href="w-cf/styles/core.css" type="text/css" />
+    <link rel="stylesheet" href="w-cf/styles/cf.css" type="text/css" />
+
+    <!-- app -->
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <script defer src="main.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="app-container">
+        <div id="progress">
+            <div class="loader"></div>
+        </div>
+        <div class="header">
+            <div id="catalog"></div>
+        </div>
+        <div class="main">
+            <div id="viewer"></div>
+            <div id="property-editor"></div>
+        </div>
+        <div class="footer">
+            <div id="basket"></div>
+            <div id="export"></div>
+            <div id="persistence"></div>
+        </div>
+        <div id="oap"></div>
+    </div>
+</body>
+
+</html>

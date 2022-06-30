@@ -1,0 +1,18 @@
+#viewer {
+  width: calc(100% - 358px); /* -width of property editor */
+  height: 100%;
+  border: 1px solid lightgrey;
+  position: relative;
+  margin-right: 8px;
+  float: left;
+}
+#viewer::before {
+  content: 'viewer';
+  background-color: white;
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border: 1px solid lightgrey;
+  padding: 0px 5px;
+}

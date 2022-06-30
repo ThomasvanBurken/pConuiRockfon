@@ -1,0 +1,72 @@
+
+#basket {
+  width: calc(100% - 358px); /* 100% - width of export*/
+  height: 250px;
+  overflow: auto;
+  float: left;
+  border: 1px solid lightgrey;
+  padding: 5px;
+  position: relative;
+  padding-top: 25px;
+  margin-right: 8px;
+}
+#basket::before {
+  content: 'basket';
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border: 1px solid lightgrey;
+  padding: 0px 5px;
+}
+.basket-item {
+  border: 1px solid lightgrey;
+  padding: 3px;
+  margin: 2px;
+  cursor: pointer;
+}
+.basket-item[data-update-state='Updatable'] {
+  background-color: green;
+}
+.basket-item[data-update-state='Migratable'] {
+  background-color: orange;
+}
+.basket-item[data-update-state='Invalid'] {
+  background-color: red;
+}
+.manufacturer::before {
+  content: 'manufacturer: ';
+  font-size: smaller;
+}
+.series::before {
+  content: 'series: ';
+  font-size: smaller;
+}
+.baseArticleNumber::before {
+  content: 'baseArticleNumber: ';
+  font-size: smaller;
+}
+.short-text::before {
+  content: 'short-text: ';
+  font-size: smaller;
+}
+.long-text::before {
+  content: 'long-text: ';
+  font-size: smaller;
+}
+.feature-text::before {
+  content: 'feature-text: ';
+  font-size: smaller;
+}
+.price::before {
+  content: 'price: ';
+  font-size: smaller;
+}
+.basket-sub-items {
+  font-size: small;
+}
+.basket-sub-items::before {
+  content: 'sub articles: ';
+  display: block;
+  font-weight: bold;
+}

@@ -1,0 +1,23 @@
+
+#export {
+  width: 350px;
+  border: 1px solid lightgrey;
+  padding: 5px;
+  position: relative;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+#export::before {
+  content: 'export';
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border: 1px solid lightgrey;
+  padding: 0px 5px;
+}
+
+.export-item {
+  cursor: pointer;
+}

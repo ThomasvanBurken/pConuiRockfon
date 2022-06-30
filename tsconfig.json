@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "removeComments": true,
+    "declaration": false,
+    "sourceMap": true,
+    "pretty": true,
+    "stripInternal": true,
+    "preserveConstEnums": true,
+    "experimentalDecorators": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "module": "commonjs",
+    "outDir": "./build/",
+    "types": [],
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "noImplicitOverride": true
+  },
+  "include": [
+    "./src/**/*.ts"
+  ]
+}

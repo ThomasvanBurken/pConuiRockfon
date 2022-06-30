@@ -1,0 +1,55 @@
+#property-editor {
+  width: 350px;
+  height: 100%;
+  border: 1px solid lightgrey;
+  position: relative;
+  padding: 5px;
+  padding-top: 25px;
+  overflow: auto;
+}
+#property-editor::before {
+  content: 'property-editor';
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border: 1px solid lightgrey;
+  padding: 0px 5px;
+}
+
+.property-class {
+  background-color: lightgrey;
+}
+.property {
+  position: relative;
+  background-color: white;
+  cursor: pointer;
+}
+.property[data-editable="false"] {
+  font-style: italic;
+  cursor: default;
+}
+.property[data-visible="false"] {
+  color: red;
+  display: none;
+}
+.property[data-choice-list="true"][data-editable="true"]::after {
+  content: '\025BE';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.property-choice {
+  padding-left: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.property-choice.selected {
+  font-weight: bold;
+}
+
+.property-choice > img {
+  max-width: 25px;
+  padding-right: 5px;
+}
